@@ -79,3 +79,21 @@ $ python main.py
   "Resources": [...]
 }
 ```
+
+## 📈 Monitoring with LangSmith
+
+This project integrates seamlessly with [LangSmith](https://smith.langchain.com/) for tracing, observability, and debugging of LLM workflows.
+
+To enable LangSmith monitoring:
+
+1. Sign up at [LangSmith](https://smith.langchain.com/).
+2. Set the following environment variables in your `.env` file:
+
+```env
+LANGCHAIN_API_KEY=your_langsmith_api_key
+LANGCHAIN_PROJECT=search-agent-langgraph
+```
+
+3. LangGraph and LangChain will automatically log traces, intermediate steps, tool invocations, and outputs.
+
+> You can view and analyze all runs in real-time on the LangSmith dashboard.
